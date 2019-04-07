@@ -1,3 +1,5 @@
+sudo: true
+
 language: c
 compiler:
   - gcc
@@ -99,3 +101,4 @@ matrix:
 script:
   - ./.ci/${TRAVIS_OS_NAME}-build.sh
   - find / -name 'libdpdk.*'
+  - ninja -C build install
