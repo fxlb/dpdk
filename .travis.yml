@@ -104,4 +104,3 @@ script:
   - sudo find / -name 'libdpdk.*'
   - sudo find / -name '*.ko'
   - ls /usr/local/include
-  - ls -R /usr/local/include/dpdk
