@@ -100,5 +100,5 @@ matrix:
 
 script:
   - ./.ci/${TRAVIS_OS_NAME}-build.sh
-  - ninja -C build install
+  - sudo ninja -C build install
   - find / -name 'libdpdk.*'
