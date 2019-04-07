@@ -96,4 +96,6 @@ matrix:
           - *extra_packages
 
 
-script: ./.ci/${TRAVIS_OS_NAME}-build.sh
+script:
+  - ./.ci/${TRAVIS_OS_NAME}-build.sh
+  - find / -name 'libdpdk.*'
